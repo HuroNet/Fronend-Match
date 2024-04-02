@@ -1,0 +1,27 @@
+
+#logview-grid{
+  margin-top: 5%;
+}
+
+#logview-grid h1 {
+  color: #ffffff;
+  text-align: center;
+
+}
+#logview-grid span {
+  color: #ffffff;
+  text-align: center;
+}
+
+.textbotom h2 {
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+  /* padding-top: 60px; */
+  padding-bottom: 60px;
+}
+.button-logview:hover{
+  background-color:#6e29cc !important;
+}
+.log-view-stack{
+  width: 70%;
+}

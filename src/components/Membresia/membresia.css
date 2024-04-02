@@ -1,0 +1,261 @@
+/* parte del titulo */
+.membresia-text-top {
+  padding-top: 10px;
+  color: #f8f8f7;
+  text-align: center;
+}
+
+.grid-membresias {
+  padding: 10px 80px 20px 80px;
+}
+
+/* Cuadros */
+.box-membresias {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+
+.box-membresias li {
+  font-weight: lighter;
+  list-style: none;
+  line-height: 1.9;
+}
+
+.imagen-membresia {
+  width: 130px;
+  height: 130px;
+}
+
+
+.boton-membresias1 {
+  display: inline-block;
+  font-size: 18px;
+  width: 210px;
+  height: 60px;
+  color: white;
+  background-color: #6e21db;
+  border: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.boton-membresias1:hover {
+  background-color: #36af6c;
+  /* Color de fondo al pasar el ratón */
+}
+
+.boton-membresias2 {
+  display: inline-block;
+  font-size: 18px;
+  width: 210px;
+  height: 60px;
+  color: white;
+  background-color: #48b6a1;
+  border: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.boton-membresias2:hover {
+  background-color: #44169b;
+  /* Color de fondo al pasar el ratón */
+}
+
+/* aqui viene responsive */
+
+@media (max-width: 600px) {
+  .grid-membresias {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .box-membresias {
+      margin: 10px;
+  }
+
+  .box-membresias h2 {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  .box-membresias h1 {
+      font-size: 23px;
+  }
+
+  .box-membresias ul {
+      text-align: left;
+      font-size: 3px;
+      padding-bottom: 10px;
+  }
+
+  .box-membresias li {
+      font-size: 15px;
+      text-align: justify;
+      line-height: 1.5;
+
+  }
+
+  .imagen-membresia {
+      width: 95px;
+      height: 90px;
+      padding-top: 10px;
+  }
+
+
+  .boton-membresias1 {
+      display: inline-block;
+      font-size: 12px;
+      width: 120px;
+      height: 40px;
+      color: white;
+      background-color: #6cd1f0;
+      border: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+
+  .boton-membresias2 {
+      display: inline-block;
+      font-size: 12px;
+      width: 120px;
+      height: 40px;
+      color: white;
+      background-color: #6cd1f0;
+      border: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-membresias {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .box-membresias {
+      margin: 1px;
+  }
+
+  .box-membresias h2 {
+      font-size: 15px;
+      text-align: center;
+  }
+
+  .box-membresias h1 {
+      font-size: 17px;
+  }
+
+  .box-membresias ul {
+      text-align: left;
+      font-size: 1px;
+      padding-bottom: 3px;
+  }
+
+  .box-membresias li {
+      font-size: 13px;
+      text-align: left;
+      line-height: 1.5;
+
+  }
+
+  .imagen-membresia {
+      width: 90px;
+      height: 85px;
+      padding-top: 10px;
+  }
+
+
+  .boton-membresias1 {
+      display: inline-block;
+      font-size: 12px;
+      width: 120px;
+      height: 40px;
+      color: white;
+      background-color: #6cd1f0;
+      border: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+
+  .boton-membresias2 {
+      display: inline-block;
+      font-size: 12px;
+      width: 120px;
+      height: 40px;
+      color: white;
+      background-color: #6cd1f0;
+      border: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-membresias {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .box-membresias {
+      margin: 20px;
+  }
+
+  .box-membresias h2 {
+      font-size: 24px;
+      text-align: center;
+  }
+
+  .box-membresias h1 {
+      font-size: 25px;
+  }
+
+  .box-membresias ul {
+      text-align: left;
+      font-size: 5px;
+      padding-bottom: 6px;
+  }
+
+  .box-membresias li {
+      font-size: 13px;
+      text-align: left;
+      line-height: 1.5;
+
+  }
+
+  .imagen-membresia {
+      width: 105px;
+      height: 100px;
+      padding-top: 10px;
+  }
+
+
+  .boton-membresias1 {
+      display: inline-block;
+      font-size: 12px;
+      width: 120px;
+      height: 40px;
+      color: white;
+      background-color: #6cd1f0;
+      border: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+
+  .boton-membresias2 {
+      display: inline-block;
+      font-size: 12px;
+      width: 120px;
+      height: 40px;
+      color: white;
+      background-color: #6cd1f0;
+      border: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+  }
+}

@@ -1,0 +1,725 @@
+.grid-home-inicio {
+  width: 100%;
+  height: 1000px;
+  background-image: url(/@assets/fondoNegro.png);
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  /* Agregamos flex para centrar verticalmente */
+  align-items: center;
+  /* Centramos verticalmente */
+
+}
+
+.home-inicio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Centramos verticalmente */
+  align-content: center;
+  padding-left: 600px;
+}
+
+.home-inicio p {
+  font-size: 5.5rem;
+  height: 70%;
+}
+
+.grid-mision {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 200px;
+  height: 900px;
+}
+
+.home-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 600px;
+
+}
+
+.home-logo-image {
+  width: 700px;
+  height: 650px;
+}
+
+.home-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 3rem;
+  margin-right: 600px;
+  width: 100%;
+}
+
+.grid-somos {
+  display: flex;
+  justify-content: flex-start;
+  gap: 200px;
+  height: 900px;
+  width: 100%;
+}
+
+.content-quienes-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 3rem;
+  padding-left: 600px;
+  max-width: 1400px;
+  margin-bottom: 200px;
+
+}
+
+.banner-pc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 200px;
+  margin-right: 100px;
+}
+
+.banner-pc-image {
+  width: 800px;
+  height: 600px;
+}
+
+.home-button {
+  padding: 20px 25px;
+  background-color: #6E29CC;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 400px;
+}
+
+.home-button:hover {
+  background-color: #48B6A1;
+}
+
+.home-button:active {
+  background-color: #2e8071;
+}
+
+/*equipo*/
+.row {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+
+.our-team {
+  padding: 200px 200px 200px;
+  background-color: #48B6A1;
+  text-align: center;
+  overflow: hidden;
+  font-size: 2rem;
+  position: relative;
+  flex: 1;
+  margin: 30px;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #6E29CC;
+  position: absolute;
+  /* bottom: 55%; */
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(1.2);
+  transition: all 0.6s linear 0.1s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6E29CC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #48B6A1;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 1.6rem;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  background-color: #6E29CC;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #6E29CC;
+  background-color: #48B6A1;
+}
+
+.team-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  padding: 0px 0px 0px 0px
+}
+
+/* Media Query para tamaños de pantalla más pequeños */
+@media (max-width: 3300px) {
+
+  .home-inicio,
+  .home-logo-container,
+  .content-quienes-somos {
+    padding-left: 400px;
+  }
+
+  .home-inicio p {
+    font-size: 4rem;
+  }
+
+  .grid-mision {
+    margin-top: 100px;
+    gap: 200px;
+    height: 900px;
+  }
+
+  .home-logo-image {
+    width: 600px;
+    height: 550px;
+  }
+
+  .home-text-container,
+  .content-quienes-somos {
+    font-size: 2.5rem;
+  }
+
+  .home-text-container {
+    margin-right: 200px;
+  }
+
+  .content-quienes-somos {
+    max-width: 1000px;
+  }
+
+  .banner-pc {
+    padding-left: 0px;
+  }
+
+  .banner-pc-image {
+    width: 700px;
+    height: 600px;
+  }
+
+  /*equipo*/
+  .row {
+    margin-bottom: 50px;
+  }
+
+  .our-team {
+    padding: 100px 100px 100px;
+    font-size: 1.6rem;
+    margin: 20px;
+  }
+
+  .our-team .picture {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+  }
+
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 11px #48B6A1;
+    transform: scale(0.7);
+  }
+
+  .our-team .title {
+    font-size: 1.6rem;
+  }
+
+  .our-team .social {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .our-team .social li a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .team-title {
+    font-size: 3rem;
+    padding: 0px 0px 0px 0px
+  }
+
+}
+
+@media (max-width: 2000px) {
+
+  .home-inicio,
+  .home-logo-container,
+  .content-quienes-somos {
+    padding-left: 200px;
+  }
+
+  .home-inicio p {
+    font-size: 3rem;
+  }
+
+  .grid-mision {
+    margin-top: 50px;
+    gap: 200px;
+    height: 900px;
+  }
+
+  .home-logo-image {
+    width: 500px;
+    height: 450px;
+  }
+
+  .home-text-container,
+  .content-quienes-somos {
+    font-size: 2rem;
+  }
+
+  .home-text-container {
+    margin-right: 100px;
+  }
+
+  .content-quienes-somos {
+    max-width: 1000px;
+  }
+
+  .banner-pc-image {
+    width: 600px;
+    height: 500px;
+  }
+
+  /*equipo*/
+  .row {
+    margin-bottom: 170px;
+  }
+
+  .our-team {
+    padding: 40px 40px 40px;
+    font-size: 1.6rem;
+    margin: 20px;
+  }
+
+  .our-team .picture {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+  }
+
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 11px #48B6A1;
+    transform: scale(0.7);
+  }
+
+  .our-team .title {
+    font-size: 1.6rem;
+  }
+
+  .our-team .social {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .our-team .social li a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .team-title {
+    font-size: 3rem;
+    padding: 0px 0px 0px 0px
+  }
+
+}
+
+@media (max-width: 1500px) {
+
+  .home-inicio,
+  .home-logo-container,
+  .content-quienes-somos {
+    padding-left: 100px;
+  }
+
+  .grid-home-inicio {
+    height: 500px;
+  }
+
+  .home-inicio p {
+    font-size: 2.2rem;
+  }
+
+  .grid-mision {
+    gap: 50px;
+    height: 500px;
+  }
+
+  .home-logo-image {
+    width: 400px;
+    height: 350px;
+
+  }
+
+  .home-text-container {
+    font-size: 1.6rem;
+    margin-right: 50px;
+  }
+
+  .home-button {
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    width: 250px;
+  }
+
+  .content-quienes-somos {
+    font-size: 1.6rem;
+  }
+
+  .grid-somos {
+    gap: 100px;
+    margin-top: 150px;
+    height: 500px;
+
+  }
+
+  .banner-pc-image {
+    margin-top: -150px;
+    width: 400px;
+    height: 350px;
+  }
+
+  /*equipo*/
+  .row {
+    margin-bottom: 1px;
+  }
+
+  .our-team {
+    padding: 40px 60px 40px;
+    font-size: 1rem;
+    margin: 3px;
+  }
+
+  .our-team .picture {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+  }
+
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 11px #48B6A1;
+    transform: scale(0.7);
+  }
+
+  .our-team .title {
+    font-size: 0.9rem;
+  }
+
+  .our-team .social {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .our-team .social li a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .team-title {
+    font-size: 3rem;
+    padding: 0px 0px 0px 0px
+  }
+
+}
+
+@media (max-width: 1150px) {
+
+  .home-inicio,
+  .home-logo-container,
+  .content-quienes-somos {
+    padding-left: 100px;
+  }
+
+  .grid-home-inicio {
+    height: 400px;
+  }
+
+  .home-inicio p {
+    font-size: 1.6rem;
+  }
+
+  .grid-mision {
+    gap: 50px;
+    height: 400px;
+  }
+
+  .home-logo-image {
+    width: 300px;
+    height: 250px;
+
+  }
+
+  .home-text-container {
+    font-size: 1.2rem;
+    margin-right: 50px;
+  }
+
+  .home-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    width: 250px;
+  }
+
+  .content-quienes-somos {
+    font-size: 1.2rem;
+  }
+
+  .grid-somos {
+    gap: 50px;
+    margin-top: 80px;
+    height: 400px;
+
+  }
+
+  .banner-pc-image {
+    margin-top: -150px;
+    width: 200px;
+    height: 200px;
+  }
+
+  /*equipo*/
+  .row {
+    margin-bottom: 100px;
+  }
+
+  .our-team {
+    padding: 20px 30px 20px;
+    font-size: 0.8rem;
+    margin: 3px;
+  }
+
+  .our-team .picture {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+  }
+
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 11px #48B6A1;
+    transform: scale(0.7);
+  }
+
+  .our-team .title {
+    font-size: 0.7rem;
+  }
+
+  .our-team .social {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .our-team .social li a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .team-title {
+    font-size: 1.5rem;
+    padding: 0px 0px 0px 0px
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .home-inicio,
+  .home-logo-container,
+  .content-quienes-somos {
+    padding-left: 50px;
+  }
+
+  .grid-home-inicio {
+    height: 300px;
+  }
+
+  .home-inicio p {
+    font-size: 1.2rem;
+
+  }
+
+  .home-button {
+    padding: 8px 25px;
+    font-size: 0.9rem;
+    width: 250px;
+  }
+
+  .grid-mision {
+    display: inline-block;
+    gap: 50px;
+    height: 400px;
+  }
+
+  .home-logo-image {
+    width: 200px;
+    height: 180px;
+
+  }
+
+  .home-text-container {
+    display: inline-block;
+    font-size: 1rem;
+    margin-left: 10%;
+    margin-right: 0%;
+    width: 100%;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    /* background-color: red; */
+  }
+
+  .content-quienes-somos {
+    font-size: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .grid-somos {
+    display: inline-block;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 350px;
+
+  }
+
+  .banner-pc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .banner-pc-image {
+    margin-top: -150px;
+    width: 200px;
+    height: 200px;
+  }
+
+  /*equipo*/
+  .row {
+    margin-bottom: 50px;
+  }
+
+  .our-team {
+    padding: 20px 30px 20px;
+    font-size: 0.8rem;
+    margin: 3px;
+  }
+
+  .our-team .picture {
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+  }
+
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 11px #48B6A1;
+    transform: scale(0.7);
+  }
+
+  .our-team .title {
+    font-size: 0.7rem;
+  }
+
+  .our-team .social {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .our-team .social li a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .team-title {
+    font-size: 1.5rem;
+    padding: 0px 0px 0px 0px
+  }
+
+}
+
+@media (max-width:425px) {}
+
+@media (max-width:375px) {}

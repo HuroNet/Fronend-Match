@@ -1,0 +1,228 @@
+.UserPersonalProfileContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.PersonalProfileImage {
+    max-width: 100%;
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PersonalProfileImage picture img {
+    max-width: 100%;
+    max-height: 90%;
+    height: auto;
+    object-fit: contain;
+}
+
+.PersonalProfileForm-container {
+    height: 90vh;
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PersonalProfileForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: #6e29cc;
+    width: 40vw;
+    height: 80vh;
+}
+
+.PersonalProfileForm-text{
+    margin-right: auto;
+    margin-left: 12%;
+}
+
+.PersonalProfileForm-img{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 15vh;
+    margin-top: 3%;
+}
+
+.PersonalProfileForm-img picture img{
+    height: 20%;
+    object-fit: contain;
+}
+
+.PersonalProfileForm-button {
+    margin-left: auto;
+    padding-right: 12%;
+    margin-top: 1.25%;
+}
+
+.PersonalProfileForm-button-submit:hover {
+    background-color: #48b6a1 !important;
+    transform: scale(1.1);
+}
+
+
+
+@media (min-width:1181px) {
+    .UserPersonalProfileContainer {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        height: 100%;
+    }
+
+    .PersonalProfileImage {
+        max-width: 100%;
+        height: 90vh;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PersonalProfileImage picture img {
+        max-width: 100%;
+        max-height: 90%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .PersonalProfileForm-container {
+        height: 90vh;
+        width: 65vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PersonalProfileForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 18px;
+        width: 40vw;
+        height: 80vh;
+    }
+}
+
+@media (min-width:821px) and (max-width:1180px) {
+    .UserPersonalProfileContainer {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .PersonalProfileImage {
+        height: 0vh;
+        width: 0vw;
+    }
+
+    .PersonalProfileImage picture img {
+        display: none;
+    }
+
+    .PersonalProfileForm-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PersonalProfileForm {
+        max-width: 60vw;
+        width: 70vw;
+        height: 90vh;
+    }
+}
+
+@media (max-width:820px) {
+    .UserPersonalProfileContainer {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .PersonalProfileImage {
+        height: 0vh;
+        width: 0vw;
+    }
+
+    .PersonalProfileImage picture img {
+        display: none;
+    }
+
+    .PersonalProfileForm-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PersonalProfileForm {
+        margin-top: -18%;
+        width: 80vw;
+        height: 77vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .UserPersonalProfileContainer {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        min-width: 300px;
+    }
+
+    .PersonalProfileImage {
+        height: 0vh;
+        width: 0vw;
+    }
+
+    .PersonalProfileImage picture img {
+        display: none;
+    }
+
+    .PersonalProfileForm-container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PersonalProfileForm {
+        margin-top: -25%;
+        width: 90vw;
+        height: 77vh;
+        
+    }
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #070707;
+  color: white;
+}
+
+.d_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.f_flex {
+  /*Contenedor de la barra de menu*/
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 600px) {
+}

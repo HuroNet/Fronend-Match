@@ -1,0 +1,52 @@
+{
+  "dataImages": [
+    {
+      "id": "1",
+      "namefoto": "Alexandra",
+      "description": "Me llamo Alexandra, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/foto1.png"
+    },
+    {
+      "id": "2",
+      "namefoto": "Janiz",
+      "description": "Me llamo Janiz, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/janiz.png"
+    },
+    {
+      "id": "3",
+      "namefoto": "Lau",
+      "description": "Me llamo Lau, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/foto3.png"
+    },
+    {
+      "id": "4",
+      "namefoto": "Mary",
+      "description": "Me llamo Mary, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/foto4.png"
+    },
+    {
+      "id": "5",
+      "namefoto": "Gino",
+      "description": "Me llamo Carlos, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/gino.png"
+    },
+    {
+      "id": "6",
+      "namefoto": "Felipe",
+      "description": "Me llamo Felipe, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/foto6.png"
+    },
+    {
+      "id": "7",
+      "namefoto": "Rubick",
+      "description": "Me llamo Felipe, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/rubick.jpg"
+    },
+    {
+      "id": "8",
+      "namefoto": "Calo",
+      "description": "Me llamo Calo, tengo 25 años y me gusta los videojuegos",
+      "imgUrl": "src/assets/imagesProfile/calo.png"
+    }
+  ]
+}
