@@ -8,14 +8,13 @@ import Typography from '@mui/material/Typography';
 import './login.css';
 import { boxLogin, inputStyle } from './styleLogin.jsx';
 
-
 export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLoginClick = () => {
     if (email.trim() === '' || password.trim() === '') {
-      console.log("no")
+      console.log('no');
     } else {
       // Use history to navigate to the desired page
       history.push('/user-profile');
@@ -51,7 +50,7 @@ export const Login = () => {
                 autoComplete="email"
                 sx={[inputStyle]}
                 value={email}
-                onChange={(e) =>setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <TextField
                 margin="normal"
@@ -63,7 +62,7 @@ export const Login = () => {
                 id="password"
                 sx={[inputStyle]}
                 value={password}
-                onChange={(e)=> setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="password-forget">
@@ -76,9 +75,11 @@ export const Login = () => {
                 Registrate
               </Link>
             </div>
-    
+
             <div>
-                <button className="boton-login" onClick={handleLoginClick}>Iniciar Sesion</button>
+              <button className="boton-login" onClick={handleLoginClick}>
+                Iniciar Sesion
+              </button>
             </div>
           </div>
         </Box>
